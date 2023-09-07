@@ -20,11 +20,11 @@ app.use(bodyParser.json());
 
 const server = http.createServer(app);
 
-server.listen(8080, () => {
-  console.log('Server running on http://localhost:8080/');
+server.listen(3000, () => {
+  console.log('Server running on http://localhost:3000/');
 });
 
-const MONGO_URL = 'mongodb+srv://ahmedllshafiey:root@cluster-00.wfuw8yg.mongodb.net/'; // DB URI
+const MONGO_URL = '' //DB URL;
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
